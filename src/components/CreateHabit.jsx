@@ -12,6 +12,8 @@ const CreateHabit = (props) => {
   // handle new habits
   const AddHabitHandler = () => {
     dispatch(addHabit({ title, description, details }))
+    setDescription('')
+    setTitle('')
     props.onHide()
   }
 
